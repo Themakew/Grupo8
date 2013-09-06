@@ -8,15 +8,15 @@ Projeto relacionado à destinação do lixo Domiciliar. Projeto da matéria de G
 Alunos do Projeto:
 
 GPP:
-Ruyther Costa 100122981
-Vinicius Vasconcelos
-Yuri Mota
-Eduardo Barbosa
+Ruyther Costa-100122981, 
+Vinicius Vasconcelos, 
+Yuri Mota, 
+Eduardo Barbosa.
 
 MDS:
-Yuri Loiola
-Maria Felix
-Attany Nathaly
-Edson Gomes
-Vanessa de Andrade
-João Henrique
+Yuri Loiola, 
+Maria Felix, 
+Attany Nathaly, 
+Edson Gomes, 
+Vanessa de Andrade, 
+João Henrique.
