@@ -1,1 +1,0 @@
-Pasta destinada ao controle dos dados a serem lidos e das classes modelo.
