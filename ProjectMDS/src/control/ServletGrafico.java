@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import persistencia.*;
 
 @WebServlet("/PesquisaDados")
 public class ServletGrafico extends HttpServlet {
@@ -17,12 +18,23 @@ public class ServletGrafico extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			 throws ServletException, IOException {
 		 
+		
+	 	
 		 try {
+		
 			 
-			 String pesquisa = request.getParameter("estado");
-			 if (!pesquisa.equals("Bahia") ){
-			 request.getRequestDispatcher("index.jsp").forward(request, response); 
-			}
+			 String pesquisa = request.getParameter("cmd");
+			 	if (!pesquisa.equals("gerarGrafico") ){				 
+		
+		// simboliza a conexão do banco	 		conn.open();
+			 		
+				 
+				 
+				 request.getRequestDispatcher("index.jsp").forward(request, response); 
+			
+			 
+			 
+			 }
 			 else{
 				 response.sendRedirect(request.getContextPath()+"/teste.jsp");
 					}
