@@ -15,39 +15,32 @@ public class ServletGrafico extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-			 throws ServletException, IOException {
-		 
-		
-	 	
-		 try {
-		
-			 
-			 String pesquisa = request.getParameter("cmd");
-			 	if (!pesquisa.equals("gerarGrafico") ){				 
-		
-		// simboliza a conexão do banco	 		conn.open();
-			 		
-				 
-				 
-				 request.getRequestDispatcher("index.jsp").forward(request, response); 
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+
+		try {
+
+			String pesquisa = request.getParameter("cmd");
+
+			// Pesquisa para gerar Graficos de estado
+			if (pesquisa.equals("Estados")) {
+			String estado = request.getParameter("estado");
 			
-			 
-			 
-			 }
-			 else{
-				 response.sendRedirect(request.getContextPath()+"/teste.jsp");
-					}
-			
-					
+			}		
+
+			// Pesquisa para gerar Graficos de Brasil
+			if (pesquisa.equals("Brasil")) {
+			}
+			if (pesquisa.equals("RegiaoMetropolitana")) {
+			}			
+
 		} catch (Exception e) {
-			request.setAttribute("pesquisa", "Erro: " + e.getMessage());  
-	         request.getRequestDispatcher("index.jsp").forward(request, response);
-			
-		
+			request.setAttribute("pesquisa", "Erro: " + e.getMessage());
+			request.getRequestDispatcher("index.jsp")
+					.forward(request, response);
+
 		}
-		 
-	 }
-	
-	
+
+	}
+
 }
