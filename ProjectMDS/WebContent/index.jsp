@@ -38,7 +38,7 @@
 <OPTION  value="Sergipe">Sergipe</OPTION>
 <OPTION  value="Tocantins">Tocantins</OPTION>
 </SELECT>
-<input type="submit" value="Pesquisar" type="estado"/>
+<input type="submit" value="Pesquisar"/>
 </form>
 
 
