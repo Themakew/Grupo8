@@ -1,1 +1,0 @@
-Pasta destinada aos teste unitários de todas as classes do projeto.

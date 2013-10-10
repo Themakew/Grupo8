@@ -1,1 +1,0 @@
-Pasta destinada a contemplar a interface do projeto.
