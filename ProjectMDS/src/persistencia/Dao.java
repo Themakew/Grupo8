@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import com.mysql.jdbc.ResultSet;
+import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
+
 //Classe servirá para fazer o parser das informações no banco de dados 
 //E conexões para demais necessidades do sistema
 
@@ -53,13 +56,17 @@ public class Dao {
 
 	}
 
-	public void buscaBrasil() throws SQLException {
+	public void buscaBrasil(String ano) throws SQLException {
 
 		try {
-
+						
 			gerarConexao();
-			String query = "SELECT * FROM ...";
+			String query = "SELECT * FROM Brasil where ano=?";
 			PreparedStatement stm = conn.prepareStatement(query);
+			
+			stm.setString(1,ano);
+			
+			
 			
 			
 		} catch (Exception e) {

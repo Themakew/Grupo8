@@ -36,7 +36,7 @@ public class ServletGrafico extends HttpServlet {
 			String ano = request.getParameter("ano");
 			String tipo = request.getParameter("tipo");
 			
-			conexao.gerarConexao();
+			
 			
 			//Comando de busca das informaçõoes com a passagem dos 
 			//paramentros acima.
