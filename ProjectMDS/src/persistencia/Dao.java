@@ -26,26 +26,52 @@ public class Dao {
 	private static final String SQL_INSERT9 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld9.csv' INTO TABLE dldufabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
 	private static final String SQL_INSERT10 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld10.csv' INTO TABLE dldufrelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
 
+	Connection conn = null;
+
 	public void gerarConexao() throws SQLException {
 
+		// Gerar uma conexão aqui dentro
 		try {
-			// Gerar uma conexão aqui dentro
+
+			conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/banco",
+					"usuario", "senha");
+
+		} catch (ClassNotFoundException ex) {
+		}
+	}
+
+	public void fecharConexao() throws SQLException {
+
+		try {
+
+			conn.close();
+
+		} catch (Exception e) {
+		}
+
+	}
+
+	public void buscaBrasil() throws SQLException {
+
+		try {
+
+			gerarConexao();
+			String query = "SELECT * FROM ...";
+			PreparedStatement stm = conn.prepareStatement(query);
+			
+			
 		} catch (Exception e) {
 
 		}
 
 	}
 
-	
-	public void fecharConexao() {
-		// Gerar fechar a conexao
-	}
-
 	// Função para inserção do das informações no banco de dados das tabelas
 	public void inserirTabela() {
 
 		Connection conn = null;
-
 		PreparedStatement stm = null;
 
 		try {

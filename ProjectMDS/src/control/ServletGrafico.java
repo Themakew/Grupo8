@@ -12,31 +12,31 @@ import com.mysql.jdbc.Connection;
 
 import persistencia.*;
 
-
-import persistencia.*;
-
 @WebServlet("/PesquisaDados")
 public class ServletGrafico extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
+	Dao conexao = new Dao();
+	
+
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		
-		
+			
 		try {
-		
 			//Conexão BD - Abre conexao com BD
-			
-			
+				
 			String pesquisa = request.getParameter("cmd");
 			
 			// Pesquisa para gerar Graficos de estado
+			
 			if (pesquisa.equals("estados")) {
 			String estado = request.getParameter("estado");
 			String ano = request.getParameter("ano");
 			String tipo = request.getParameter("tipo");
+			
+			conexao.gerarConexao();
 			
 			//Comando de busca das informaçõoes com a passagem dos 
 			//paramentros acima.
