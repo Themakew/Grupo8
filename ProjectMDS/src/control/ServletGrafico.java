@@ -39,6 +39,6 @@ public class ServletGrafico extends HttpServlet {
 	
 	
 }
-public class TesteCommit{
+public class Teste_Commit{
 	
 }
