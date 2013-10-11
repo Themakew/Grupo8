@@ -88,6 +88,40 @@ public class ServletGrafico extends HttpServlet {
 			//Fecha BD
 			
 			
+			//---------------Comunicação com a view
+			
+			
+			
+			//-----Acessar o Bean
+			//-----Chamar os setters
+			
+			//-----AddBancon de dados
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			}			
 
 		} catch (Exception e) {
