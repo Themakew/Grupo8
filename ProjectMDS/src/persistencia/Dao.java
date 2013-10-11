@@ -28,27 +28,26 @@ public class Dao {
 
 	Connection conn = null;
 
-	public void gerarConexao() throws SQLException {
+	public void gerarConexao(){
 
 		// Gerar uma conexão aqui dentro
 		try {
-
-			conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/banco",
-					"usuario", "senha");
-
-		} catch (ClassNotFoundException ex) {
+			this.conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
+		
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
 		}
 	}
 
 	public void fecharConexao() throws SQLException {
 
 		try {
-
 			conn.close();
-
 		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
 	}
@@ -59,14 +58,15 @@ public class Dao {
 
 			gerarConexao();
 			String query = "SELECT * FROM ...";
+			
+			
 			PreparedStatement stm = conn.prepareStatement(query);
 			
 			
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
-
-	}
+}
 
 	// Função para inserção do das informações no banco de dados das tabelas
 	public void inserirTabela() {

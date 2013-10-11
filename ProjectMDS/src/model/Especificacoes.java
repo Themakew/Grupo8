@@ -8,6 +8,16 @@ public class Especificacoes {
 	String opcao;
 	String tipo;
 	
+	
+	
+	public Especificacoes() {
+		
+		this.nome = "nome";
+		this.data = "data";
+		this.opcao = "opcao";
+		this.tipo = "tipo";
+	}
+	
 	public String getNome() {
 		return nome;
 	}
