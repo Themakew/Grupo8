@@ -25,6 +25,8 @@ public class ServletGrafico extends HttpServlet {
 			// Pesquisa para gerar Graficos de estado
 			if (pesquisa.equals("Estados")) {
 			String estado = request.getParameter("estado");
+			String ano = request.getParameter("ano");
+			String tipo = request.getParameter("tipo");
 			
 			}		
 
