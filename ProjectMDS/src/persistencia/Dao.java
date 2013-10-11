@@ -1,17 +1,19 @@
-package persistencia; 
+package persistencia;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+//Classe servirá para fazer o parser das informações no banco de dados 
+//E conexões para demais necessidades do sistema
 
 public class Dao {
 
-	
-	
 	protected static final String SQL_DRIVER = "com.mysql.jdbc.Driver";
-	protected static final String SQL_URL    = "jdbc:mysql://127.0.0.1/dld";
-	protected static final String SQL_USER   = "root";
-	protected static final String SQL_PASS   = "root";
+	protected static final String SQL_URL = "jdbc:mysql://127.0.0.1/dld";
+	protected static final String SQL_USER = "root";
+	protected static final String SQL_PASS = "root";
 
 	private static final String SQL_INSERT1 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld1.csv' INTO TABLE dldbrasilabsoluto1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
 	private static final String SQL_INSERT2 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld2.csv' INTO TABLE dldbrasilrelativo1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
@@ -23,8 +25,24 @@ public class Dao {
 	private static final String SQL_INSERT8 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld8.csv' INTO TABLE dldregiaorelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
 	private static final String SQL_INSERT9 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld9.csv' INTO TABLE dldufabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
 	private static final String SQL_INSERT10 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld10.csv' INTO TABLE dldufrelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+
+	public void gerarConexao() throws SQLException {
+
+		try {
+			// Gerar uma conexão aqui dentro
+		} catch (Exception e) {
+
+		}
+
+	}
+
 	
-	public void inserirTabela(){	
+	public void fecharConexao() {
+		// Gerar fechar a conexao
+	}
+
+	// Função para inserção do das informações no banco de dados das tabelas
+	public void inserirTabela() {
 
 		Connection conn = null;
 
@@ -33,9 +51,8 @@ public class Dao {
 		try {
 			Class.forName(SQL_DRIVER);
 
-			conn = DriverManager.getConnection(SQL_URL, SQL_USER,SQL_PASS);
+			conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
 
-			
 			stm = conn.prepareStatement(SQL_INSERT1);
 			stm.executeUpdate();
 			stm = conn.prepareStatement(SQL_INSERT2);
@@ -56,11 +73,10 @@ public class Dao {
 			stm.executeUpdate();
 			stm = conn.prepareStatement(SQL_INSERT10);
 			stm.executeUpdate();
-		
+
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		finally{
+		} finally {
 			try {
 				stm.close();
 				conn.close();
@@ -69,5 +85,4 @@ public class Dao {
 			}
 		}
 	}
-}	
-
+}
