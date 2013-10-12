@@ -1,18 +1,22 @@
 package persistencia;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import com.mysql.jdbc.ResultSet;
+import com.mysql.jdbc.Statement;
 import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
 
 //Classe servirá para fazer o parser das informações no banco de dados 
 //E conexões para demais necessidades do sistema
 
-public class Dao {
+import model.*;
 
+
+public class Dao {
 	protected static final String SQL_DRIVER = "com.mysql.jdbc.Driver";
 	protected static final String SQL_URL = "jdbc:mysql://127.0.0.1/dld";
 	protected static final String SQL_USER = "root";
@@ -31,7 +35,7 @@ public class Dao {
 
 	Connection conn = null;
 
-	public void gerarConexao() throws SQLException {
+	public Connection gerarConexao() throws SQLException {
 
 		// Gerar uma conexão aqui dentro
 		try {
@@ -41,8 +45,11 @@ public class Dao {
 			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/banco",
 					"usuario", "senha");
 
+			
+			
 		} catch (ClassNotFoundException ex) {
 		}
+		return conn;
 	}
 
 	public void fecharConexao() throws SQLException {
@@ -58,15 +65,21 @@ public class Dao {
 
 	public void buscaBrasil(String ano) throws SQLException {
 
+		Brasil brasil = new Brasil();
 		try {
 						
-			gerarConexao();
-			String query = "SELECT * FROM Brasil where ano=?";
-			PreparedStatement stm = conn.prepareStatement(query);
-			
-			stm.setString(1,ano);
+			Connection conexao = gerarConexao();
+						
+			String query = "Select * from Brasil where"+ano;		
 			
 			
+			Statement stm = (Statement) conexao.createStatement();
+			ResultSet  a = (ResultSet) stm.executeQuery(query);
+			
+			
+			brasil.setNome( a.getString(1)) ;
+			
+			fecharConexao();
 			
 			
 		} catch (Exception e) {
