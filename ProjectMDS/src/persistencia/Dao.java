@@ -24,6 +24,7 @@ public class Dao extends Conexao {
 					"usuario", "senha");
 
 		} catch (ClassNotFoundException ex) {
+		
 			ex.printStackTrace();
 
 		}
@@ -59,10 +60,7 @@ public class Dao extends Conexao {
 			brasil.setNome(a.getString(1));
 			brasil.setData(a.getString(2));
 			
-			
-			
-			
-			
+			stm.close();			
 			fecharConexao();
 
 		} catch (Exception e) {
