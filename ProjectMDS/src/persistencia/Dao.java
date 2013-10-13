@@ -1,29 +1,73 @@
 package persistencia;
 
-import java.sql.Connection;  
-import java.sql.DriverManager;  
-import java.sql.PreparedStatement;  
-import java.sql.ResultSet;  
-  
-public class Dao {  
-  
-   Connection conexao;  
-   PreparedStatement querySQL;  
-   ResultSet rs;  
-     
-   private final String URL = "jdbc:mysql://localhost:3306/";  
-   private final String USER = "root";  
-   private final String PASS = "senhaaqui";  
-     
-   protected void open()throws Exception{  
-      Class.forName("com.mysql.jdbc.Driver");  
-      conexao = DriverManager.getConnection(URL, USER, PASS);  
-   }  
-     
-   protected void close()throws Exception{  
-      conexao.close();  
-   }  
-     
-}  
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
+import com.mysql.jdbc.ResultSet;
+import com.mysql.jdbc.Statement;
+import model.Brasil;
+  
+public class Dao extends Conexao {
 
+	Connection conn = null;
+
+	public Connection gerarConexao() throws SQLException {
+
+		// Gerar uma conexão aqui dentro
+		try {
+
+			conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/banco",
+					"usuario", "senha");
+
+		} catch (ClassNotFoundException ex) {
+		
+			ex.printStackTrace();
+
+		}
+		return conn;
+	}
+
+	public void fecharConexao() throws SQLException {
+
+		try {
+
+			conn.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+
+	}
+
+	public void buscaBrasil(String ano) throws SQLException {
+
+		Brasil brasil = new Brasil();
+		
+		try {
+
+			Connection conexao = gerarConexao();
+
+			String query = "Select * from Brasil where" + ano;
+
+			Statement stm = (Statement) conexao.createStatement();
+			ResultSet a = (ResultSet) stm.executeQuery(query);
+
+			brasil.setNome(a.getString(1));
+			brasil.setData(a.getString(2));
+			
+			stm.close();			
+			fecharConexao();
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+
+}
+	
+
+}

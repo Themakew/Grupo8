@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-<form action="PesquisaDados" method="post"> 
+<body>m
+<form action="PesquisaDados?ddddd='sss'" method="post"> 
 <SELECT  name="estado" >
 <OPTION selected value="Selecione...">Selecione...</OPTION>
 <OPTION  value="Acre">Acre</OPTION>
