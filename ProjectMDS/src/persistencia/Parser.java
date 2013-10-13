@@ -6,16 +6,16 @@ import java.sql.PreparedStatement;
 
 public class Parser extends Conexao  {
 	
-	private static final String SQL_INSERT1 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld1.csv' INTO TABLE dldbrasilabsoluto1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT2 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld2.csv' INTO TABLE dldbrasilrelativo1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT3 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld3.csv' INTO TABLE dldbrasilabsoluto1992_1999 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT4 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld4.csv' INTO TABLE dldbrasilrelativo1992_1999 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT5 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld5.csv' INTO TABLE dldbrasilabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT6 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld6.csv' INTO TABLE dldbrasilrelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT7 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld7.csv' INTO TABLE dldregiaoabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT8 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld8.csv' INTO TABLE dldregiaorelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT9 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld9.csv' INTO TABLE dldufabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
-	private static final String SQL_INSERT10 = "LOAD DATA INFILE 'C:/Users/vinicius/Desktop/scripts.sql/arquivos/dld10.csv' INTO TABLE dldufrelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT1 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld1.csv' INTO TABLE dldbrasilabsoluto1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT2 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld2.csv' INTO TABLE dldbrasilrelativo1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT3 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld3.csv' INTO TABLE dldbrasilabsoluto1992_1999 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT4 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld4.csv' INTO TABLE dldbrasilrelativo1992_1999 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT5 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld5.csv' INTO TABLE dldbrasilabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT6 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld6.csv' INTO TABLE dldbrasilrelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT7 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld7.csv' INTO TABLE dldregiaoabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT8 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld8.csv' INTO TABLE dldregiaorelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT9 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld9.csv' INTO TABLE dldufabsoluto2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
+	private static final String SQL_INSERT10 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld10.csv' INTO TABLE dldufrelativo2001_2009 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
 
 	Connection conn = null;
 
