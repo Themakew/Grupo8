@@ -4,7 +4,7 @@ $axure.eventManager.pageLoad(
 function (e) {
 
 });
-gv_vAlignTable['u31'] = 'center';gv_vAlignTable['u36'] = 'center';gv_vAlignTable['u17'] = 'center';gv_vAlignTable['u29'] = 'center';document.getElementById('u8_img').tabIndex = 0;
+gv_vAlignTable['u17'] = 'center';gv_vAlignTable['u29'] = 'center';document.getElementById('u8_img').tabIndex = 0;
 
 u8.style.cursor = 'pointer';
 $axure.eventManager.click('u8', function(e) {
@@ -15,7 +15,7 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u21'] = 'center';document.getElementById('u6_img').tabIndex = 0;
+gv_vAlignTable['u30'] = 'top';gv_vAlignTable['u21'] = 'center';document.getElementById('u6_img').tabIndex = 0;
 
 u6.style.cursor = 'pointer';
 $axure.eventManager.click('u6', function(e) {
@@ -26,7 +26,7 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u13'] = 'center';document.getElementById('u14_img').tabIndex = 0;
+gv_vAlignTable['u32'] = 'center';gv_vAlignTable['u13'] = 'center';document.getElementById('u14_img').tabIndex = 0;
 
 u14.style.cursor = 'pointer';
 $axure.eventManager.click('u14', function(e) {
@@ -92,4 +92,4 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u25'] = 'center';gv_vAlignTable['u33'] = 'center';gv_vAlignTable['u34'] = 'top';
+gv_vAlignTable['u25'] = 'center';
