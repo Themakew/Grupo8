@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Brasil;
+
 import persistencia.*;
 
 @WebServlet("/PesquisaDados")
@@ -15,13 +17,14 @@ public class ServletGrafico extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	Dao conexao = new Dao();
+	
 	
 
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-			
+		Dao conexao = new Dao();
+		
 		try {
 			//Conexão BD - Abre conexao com BD
 				
@@ -33,8 +36,7 @@ public class ServletGrafico extends HttpServlet {
 			String estado = request.getParameter("estado");
 			String ano = request.getParameter("ano");
 			String tipo = request.getParameter("tipo");
-			
-			
+						
 			
 			//Comando de busca das informaçõoes com a passagem dos 
 			//paramentros acima.
@@ -51,9 +53,10 @@ public class ServletGrafico extends HttpServlet {
 			// Pesquisa para gerar Graficos de Brasil
 			if (pesquisa.equals("Brasil")) {
 			String ano = request.getParameter("ano");
-			String tipo = request.getParameter("tipo");
-			//Comando de busca das informaçõoes com a passagem dos 
-			//paramentros acima.
+					
+					
+			Brasil brasil = new Brasil(); 
+			brasil = conexao.buscaBrasil(ano);
 			
 			
 			//Resgate das informações do BD 
