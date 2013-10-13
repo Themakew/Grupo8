@@ -1,9 +1,0 @@
-Warning: Task:find_and_outline_requirements: Missing referenced element Artifact:glossary
-Warning: TaskDescriptor:find_and_outline_requirements: Missing referenced element Artifact:glossary
-Warning: Task:detail_requirements: Missing referenced element Artifact:glossary
-Warning: TaskDescriptor:detail_requirements: Missing referenced element Artifact:glossary
-Warning: Task:outline_the_architecture: Missing referenced element Artifact:glossary
-Warning: TaskDescriptor:outline_the_architecture: Missing referenced element Artifact:glossary
-Warning: Domain:change_management: Empty content category element not published.
-Warning: Report:project_burndown: Missing referenced element Example:project_burndown_report_example
-Warning: Report:iteration_burndown: Missing referenced element Example:iteration_burndown_report_example
