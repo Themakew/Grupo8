@@ -8,6 +8,17 @@ public class Especificacoes {
 	String opcao;
 	String tipo;
 	
+	public Especificacoes(String nome ,String data ,String opcao,String tipo) {
+		
+		this.nome =nome;
+		this.data = data;
+		this.opcao = opcao;
+		this.tipo = tipo;	
+		
+	}
+	public Especificacoes(){}
+	
+	
 	public String getNome() {
 		return nome;
 	}

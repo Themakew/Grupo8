@@ -7,14 +7,15 @@ import java.sql.SQLException;
 import com.mysql.jdbc.ResultSet;
 import com.mysql.jdbc.Statement;
 import model.Brasil;
-  
+import model.RegiaoMetropolitana;
+import model.UnidadesFederativas;
+
 public class Dao extends Conexao {
 
 	Connection conn = null;
 
 	public Connection gerarConexao() throws SQLException {
 
-		// Gerar uma conexão aqui dentro
 		try {
 
 			conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
@@ -23,7 +24,7 @@ public class Dao extends Conexao {
 					"usuario", "senha");
 
 		} catch (ClassNotFoundException ex) {
-		
+
 			ex.printStackTrace();
 
 		}
@@ -43,10 +44,9 @@ public class Dao extends Conexao {
 
 	}
 
-	public void buscaBrasil(String ano) throws SQLException {
+	public Brasil buscaBrasil(String ano) throws SQLException {
 
 		Brasil brasil = new Brasil();
-		
 		try {
 
 			Connection conexao = gerarConexao();
@@ -58,8 +58,8 @@ public class Dao extends Conexao {
 
 			brasil.setNome(a.getString(1));
 			brasil.setData(a.getString(2));
-			
-			stm.close();			
+
+			stm.close();
 			fecharConexao();
 
 		} catch (Exception e) {
@@ -67,7 +67,62 @@ public class Dao extends Conexao {
 			e.printStackTrace();
 		}
 
-}
-	
+		return brasil;
+
+	}
+
+	public UnidadesFederativas buscaUF(String ano, String tipo)
+			throws Exception {
+
+		UnidadesFederativas uf = new UnidadesFederativas();
+		try {
+
+			Connection conexao = gerarConexao();
+
+			String query = "Select * from unidadesFederativa where" + ano;
+
+			Statement stm = (Statement) conexao.createStatement();
+			ResultSet a = (ResultSet) stm.executeQuery(query);
+
+			uf.setNome(a.getString(1));
+			uf.setData(a.getString(2));
+
+			stm.close();
+			fecharConexao();
+
+		} catch (Exception e) {
+
+		}
+
+		return uf;
+
+	}
+
+	public RegiaoMetropolitana buscaRegioes(String ano, String tipo)
+			throws Exception {
+
+		RegiaoMetropolitana regiao = new RegiaoMetropolitana();
+		try {
+
+			Connection conexao = gerarConexao();
+
+			String query = "Select * from região where" + ano;
+
+			Statement stm = (Statement) conexao.createStatement();
+			ResultSet a = (ResultSet) stm.executeQuery(query);
+
+			regiao.setNome(a.getString(1));
+			regiao.setData(a.getString(2));
+
+			stm.close();
+			fecharConexao();
+
+		} catch (Exception e) {
+
+		}
+
+		return regiao;
+
+	}
 
 }
