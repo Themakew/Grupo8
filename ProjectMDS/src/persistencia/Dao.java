@@ -46,8 +46,7 @@ public class Dao extends Conexao {
 
 	public Brasil buscaBrasil(String ano) throws SQLException {
 
-		Brasil brasil = new Brasil(); // Gerar uma conexão aqui dentroBrasil();
-
+		Brasil brasil = new Brasil();
 		try {
 
 			Connection conexao = gerarConexao();
@@ -98,16 +97,16 @@ public class Dao extends Conexao {
 		return uf;
 
 	}
-	
+
 	public RegiaoMetropolitana buscaRegioes(String ano, String tipo)
 			throws Exception {
 
-		RegiaoMetropolitana  regiao = new RegiaoMetropolitana();
+		RegiaoMetropolitana regiao = new RegiaoMetropolitana();
 		try {
 
 			Connection conexao = gerarConexao();
 
-			String query = "Select * from unidadesFederativa where" + ano;
+			String query = "Select * from região where" + ano;
 
 			Statement stm = (Statement) conexao.createStatement();
 			ResultSet a = (ResultSet) stm.executeQuery(query);
@@ -125,9 +124,5 @@ public class Dao extends Conexao {
 		return regiao;
 
 	}
-	
-	
-	
-	
 
 }
