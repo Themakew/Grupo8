@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-vXA3VOT2PxIGrnpbvLtuLg" name="new_artifact,_P0l1YCOtEeOg05XuWIgxJw" guid="-vXA3VOT2PxIGrnpbvLtuLg" authors="João Henrique" changeDate="2013-09-22T14:38:49.442-0300" version="1.0">
+  <mainDescription>&lt;p>&#xD;
+    Os sistemas interagem com atores que tem espectativas à respeito do comportamento do mesmo, o caso de uso especifica&#xD;
+    esse comportamento.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;p>&#xD;
+    Chegar a uma compreensão comum com os usuários finais e os desenvolvedores&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

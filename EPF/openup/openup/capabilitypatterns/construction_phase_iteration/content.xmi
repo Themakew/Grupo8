@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-OC3td1csl7lqV15vimYOaw" guid="-OC3td1csl7lqV15vimYOaw"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-C3RmtvThtego5U5cOk8uCA" guid="-C3RmtvThtego5U5cOk8uCA"/>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-239OBD2wagT2qp8fuPWcHQ" guid="-239OBD2wagT2qp8fuPWcHQ">
+    <mainDescription>&lt;p>A &lt;a href=&quot;./../../openup/workproducts/architecture_notebook_9BB92433.html&quot; guid=&quot;_0XAf0MlgEdmt3adZL5Dmdw&quot;>arquitetura&lt;/a> deve estar estável quando a fase de Construção começar, permitindo que os requisitos restantes sejam implementados nela. Outra vantagem de validar a arquitetura e eliminar a maioria dos riscos possíveis durante a Elaboração é que isto fornece mais previsibilidade na Construção, o que permite ao &lt;a class=&quot;elementlinkwithusertext&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>gerente de projeto&lt;/a> focar na eficiência da equipe e na redução dos custos.&lt;/p>&#xD;
+&lt;p>A funcionalidade é continuamente implementada, testada e integrada, resultando em &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/workproducts/build_95D7D8FD.html&quot; guid=&quot;_0YuXEMlgEdmt3adZL5Dmdw&quot;>construções&lt;/a>, que são cada vez mais completas e estáveis. Você pode implantar uma versão beta ou de pré-liberação para uma quantidade específica da audiência no final da Construção. A entrega da versão final é o principal foco da próxima fase.&lt;/p>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:ProcessDescription>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-Xfm5yDx3AVScrP1ZdLT-Sw" guid="-Xfm5yDx3AVScrP1ZdLT-Sw">
+    <mainDescription>&lt;p>Esta atividade descreve as tarefas executadas para recolher, especificar, analisar e validar um subconjunto dos requisitos do sistema antes da implementação e da verificação. Isto não implica que todos os requisitos sejam detalhados antes do início da implementação. Ao invés disso, esta atividade é executada durante todo o ciclo de vida com os &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholder&lt;/a>s e toda a equipe de desenvolvimento, colaborando para assegurar que um conjunto claro, consistente, correto, verificável e praticável de requisitos esteja disponível para direcionar a implementação e a verificação.&lt;/p>&#xD;
+&lt;p>Durante a Concepção, o foco está em obter acordo sobre o problema a ser resolvido, recolhendo as necessidades dos Stakeholders e capturando as características de alto nível do sistema (veja a atividade &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/capabilitypatterns/initiate_project_D9C03857.html&quot; guid=&quot;_0pWNA8lgEdmt3adZL5Dmdw&quot;>Iniciar o Projeto&lt;/a>).&lt;/p>&#xD;
+&lt;p>Durante a Elaboração, o foco desloca-se para a definição da solução. Isto consiste em encontrar os requisitos que têm o maior valor para os Stakeholders, que são particularmente desafiadores ou de grande risco, ou que são arquiteturalmente significantes (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/tasks/find_and_outline_requirements_90D272B9.html&quot; guid=&quot;_P9cMUPV_EdmdHa9MmVPgqQ&quot;>Tarefa: Encontrar e Descrever Requisitos&lt;/a>). Os requisitos que foram priorizados para implementação nas primeiras iterações (através da &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>) são então descritos com suficiente detalhe para:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Valide o entendimento dos requisitos pela equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Assegure a concordância dos Stakeholders&lt;/li>&#xD;
+    &lt;li>Permita que o desenvolvimento do software inicie&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>(veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/tasks/detail_requirements_9747F71E.html&quot; guid=&quot;_0e1mIMlgEdmt3adZL5Dmdw&quot;>Tarefa: Detalhar os Requisitos&lt;/a>). Para cada um destes requisitos, definia os casos de teste associados para assegurar que os requisitos sejam verificáveis, e fornecer a orientação necessária para verificação e validação (veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/tasks/create_test_cases_D39E98A1.html&quot; guid=&quot;_0iwc0clgEdmt3adZL5Dmdw&quot;>Tarefa: Criar Casos de Teste&lt;/a>).&lt;/p>&#xD;
+&lt;p>Durante a Construção, o foco desloca-se para o refinamento da definição do sistema. Isto consiste em detalhar os requisitos restantes e os casos de teste associados para direcionar a implementação e a verificação, e gerenciar a mudança nos requisitos (veja a atividade &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/capabilitypatterns/ongoing_tasks_91569239.html&quot; guid=&quot;_0pJ_xslgEdmt3adZL5Dmdw&quot;>Executar Tarefas Contínuas&lt;/a>).&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ProcessDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-yj5gxHbnJ9aMJ0wW2LZbdA" name="vision,_eFeO0kbpEduLBN1xMBngqw" guid="-yj5gxHbnJ9aMJ0wW2LZbdA">
+    <refinedDescription>&lt;p>Este artefato fornece uma visão completa do sistema de software em desenvolvimento e dá suporte ao contrato entre o cliente e a organização de desenvolvimento. Cada projeto necessita de uma fonte para capturar as expectativas dos Stakeholders.&lt;/p>&#xD;
+&lt;p>Este artefato é escrito a partir da perspectiva dos clientes, focando nas características essenciais do sistema e nos níveis aceitáveis de qualidade. O artefato deve incluir uma descrição de quais &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../openup/guidances/termdefinitions/feature_4ED64AEE.html&quot; guid=&quot;_PgYREAeYEduWycDgioo5rg&quot;>Características&lt;/a> serão incluídas, bem como as que foram consideradas, mas não incluídas.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="--oB96ioYEMjXIkYqVEeNIw" name="find_and_outline_requirements,_eGoFYkbpEduLBN1xMBngqw" guid="--oB96ioYEMjXIkYqVEeNIw">
+    <keyConsiderations>A colaboração com os Stakeholders nesta tarefa é crítica para o sucesso do projeto. Veja o princípio &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/core_principle_collaborate_EC5EB51F.html&quot; guid=&quot;_KkTIsMp7EdqC_NfSivunjA&quot;>Colaborar para alinhar os interesses e compartilhar o entendimento&lt;/a> para mais informações.</keyConsiderations>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-N8uJZv2P-JFYdpHBoRQsNw" name="supporting_requirements_spec,_eGoFZEbpEduLBN1xMBngqw" guid="-N8uJZv2P-JFYdpHBoRQsNw">
+    <refinedDescription>&lt;p>Juntos, os Requisitos Suplementares e os Casos de Uso definem todos os requisitos do sistema. Os Casos de Uso descrevem os requisitos comportamentais do sistema, e os Requisitos Suplementares descrevem todos os outros requisitos que não são capturados nas Especificações de Caso de Uso. Ao fazer esta distinção simplificamos a manutenção.&lt;/p>&#xD;
+&lt;p>Os Requisitos Suplementares podem ser categorizados de acordo com o modelo FURPS+ (Funcional, Usabilidade, Confiabilidade, Desempenho, Suportabilidade + Restrições). Para mais informações sobre esta classificação, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/supporting_requirements_B2C4D610.html&quot; guid=&quot;_VXZ5wO0IEdqHTdbLTmC5IQ&quot;>Conceito: Requisitos Suplementares &lt;/a>.&lt;/p>&#xD;
+&lt;p>A figura abaixo ilustra o relacionamento entre os Requisitos Suplementares, as Especificações de Caso de Uso e os Atores.&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;400&quot; alt=&quot;&quot; src=&quot;./../../openup/workproducts/./resources/supporting_reguirements2.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-x-AnJfLv-3YN8Dm9-E4VAQ" name="detail_requirements,_eGuMBUbpEduLBN1xMBngqw" guid="-x-AnJfLv-3YN8Dm9-E4VAQ">
+    <keyConsiderations>Para evitar re-trabalho desnecessário, somente os requisitos que estão programados para implementação a curto prazo (na próxima iteração ou na seguinte) devem ser detalhados.</keyConsiderations>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-0mKRHTSBBTXCtVa3ufycYg" name="glossary,_eG0SoEbpEduLBN1xMBngqw" guid="-0mKRHTSBBTXCtVa3ufycYg">
+    <keyConsiderations>&lt;p>Em alguns projetos que não envolvem modelagem de negócio ou domínio, o Glossário é o principal artefato para registrar as informações sobre o domínio do negócio do projeto.&lt;/p>&#xD;
+&lt;p>Embora listado como uma saída ou entrada das tarefas associadas com a disciplina de requisitos, este artefato pode ser atualizado a qualquer momento, por qualquer papel, assim que novos termos sejam identificados.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>O glossário ajuda a evitar problemas de comunicação fornecendo dois recursos essenciais:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Um local central para procurar termos e abreviaturas que sejam novos para os membros da equipe de desenvolvimento&lt;/li>&#xD;
+    &lt;li>Definições dos termos que são usados de formas específicas dentro do domínio&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>As definições para os termos do Glossário vêm de diversas fontes, tais como documentos de requisitos, especificações e discussões com os Stakeholders e com os peritos do domínio.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-kwGLAMS9ywE55cK365ubew" name="create_test_case,_eHAf4EbpEduLBN1xMBngqw" guid="-kwGLAMS9ywE55cK365ubew">
+    <keyConsiderations>&lt;p>Desenvolva os casos de teste paralelamente aos requisitos de forma que o &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/roles/analyst_39D7C49B.html&quot; guid=&quot;_0VxJsMlgEdmt3adZL5Dmdw&quot;>Analista&lt;/a> e o &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/roles/stakeholder_9FFD4106.html&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholder&lt;/a> possam concordar com as condições específicas de satisfação para cada requisito. Os casos de teste agem como critérios de aceitação, expandindo sobre a intenção do sistema através de cenários reais de utilização. Isto permite aos membros da equipe medir o progresso em termos de casos de teste executados com sucesso.&lt;/p></keyConsiderations>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-HA7QBnvexhL2bYfC8Hld3A" name="tester,_eHAf4UbpEduLBN1xMBngqw" guid="-HA7QBnvexhL2bYfC8Hld3A">
+    <refinedDescription>&lt;p>Este papel é responsável principalmente pelas seguintes tarefas:&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>Identificar os testes que necessitam ser executados&lt;/li>&#xD;
+    &lt;li>Identificar a abordagem de implementação mais apropriada para um determinado teste&lt;/li>&#xD;
+    &lt;li>Implementar testes individuais&lt;/li>&#xD;
+    &lt;li>Preparar e executar os testes&lt;/li>&#xD;
+    &lt;li>Registrar os resultados e verificar se os testes executaram&lt;/li>&#xD;
+    &lt;li>Analisar e recuperar dos erros de execução&lt;/li>&#xD;
+    &lt;li>Comunicar os resultados do teste à equipe&lt;/li>&#xD;
+&lt;/ul></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-FQT8ooojL8D917fJWXrDqg" name="test_case,_eHAf4kbpEduLBN1xMBngqw" guid="-FQT8ooojL8D917fJWXrDqg">
+    <refinedDescription>&lt;p>Um caso de teste especifica as condições que necessitam ser validadas para permitir a avaliação de alguns aspectos particulares do sistema sob teste. Um caso de teste é mais formal do que uma idéia de teste e normalmente tem a forma de uma especificação. Em ambientes menos formais, casos de teste podem ser criados pela identificação de um ID único, um nome, dados de teste associados e resultados esperados. Para um exemplo deste tipo de caso de teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/templates/test_case_A18913A5.html&quot; guid=&quot;_0dT8IMlgEdmt3adZL5Dmdw&quot;>Template: Caso de Teste&lt;/a>.&lt;/p>&#xD;
+&lt;p>Os casos de teste podem ser derivados de várias fontes, mas normalmente incluirão um subconjunto de requisitos (tais como casos de uso, características de desempenho, necessidades de confiabilidade) e outros tipos de atributos de qualidade. Para mais informações sobre tipos de teste e seus relacionamentos com os atributos de qualidade do teste, veja &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/guidances/concepts/types_of_test_CAE80710.html&quot; guid=&quot;_0aJ6cMlgEdmt3adZL5Dmdw&quot;>Conceito: Tipos de Teste&lt;/a>.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-CDnNJaKKVhP7JmL3iT2XYQ" name="architect,__BTFAClZEdytYo99TZh2Ng" guid="-CDnNJaKKVhP7JmL3iT2XYQ">
+    <keyConsiderations>Este papel coloca ênfase no princípio central de &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/guidances/concepts/core_principle_focus_346C6FAF.html&quot; guid=&quot;_9gocwMvoEdqukPpotm3DYg&quot;>Focar na arquitetura, o mais cedo possível, para reduzir os riscos e organizar o desenvolvimento&lt;/a>.</keyConsiderations>
+    <refinedDescription>&lt;p>Este papel conduz ou coordena o design técnico do sistema e tem a responsabilidade total de facilitar as principais decisões técnicas expressas na forma de arquitetura de software. Isto normalmente inclui a identificação e documentação dos aspectos arquiteturalmente significantes do sistema como visões que descrevem requisitos, design, implementação e distribuição.&lt;/p>&#xD;
+&lt;p>Este papel também é responsável por fornecer o raciocínio para estas decisões, balancear os interesses dos Stakeholders, reduzir os riscos técnicos e assegurar que as decisões sejam eficazmente comunicadas, validadas e seguidas.&lt;/p>&#xD;
+&lt;p>Este papel está bastante envolvido na organização da equipe em torno da arquitetura, trabalhando junto ao &lt;a class=&quot;elementLink&quot; href=&quot;./../../openup/roles/project_manager_E657F936.html&quot; guid=&quot;_0a0o0MlgEdmt3adZL5Dmdw&quot;>Gerente de Projeto&lt;/a> na alocação da equipe e no planejamento do projeto.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-NAgUbQ7eDLQO_EbMeapicw" name="developer,__1T74ClZEdytYo99TZh2Ng" guid="-NAgUbQ7eDLQO_EbMeapicw">
+    <refinedDescription>&lt;p>&#xD;
+    Este papel é responsável por desenvolver uma parte do sistema, incluindo a construção de seu design de forma que ele&#xD;
+    atenda a arquitetura e possivelmente a prototipagem da interface de usuário, e então implementar, executar o teste de&#xD;
+    unidade e integrar os componentes que são parte da solução.&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-xgIj5jF84axXkSzdbu5CIQ" name="iteration_plan,_piI90DlJEdyTZ9G7ByfQTw" guid="-xgIj5jF84axXkSzdbu5CIQ">
+    <keyConsiderations>&lt;p>Os itens de trabalho atribuídos a uma iteração não têm necessariamente a mesma prioridade. Ao selecionar itens da Lista de Itens de Trabalho, o plano de iteração pode acabar tendo itens de trabalho com prioridades diferentes (por exemplo, você pode atribuir os itens restantes de alta prioridade junto com alguns de prioridade média da Lista de Itens de Trabalho). Não importando qual tenha sido a prioridade anterior dos itens de trabalho, quando foram atribuídos a uma iteração, a equipe tem que se certificar que é capaz de desenvolver o que foi atribuído à iteração, e a decisão do que deve ser desenvolvido primeiro em uma iteração (ou mesmo em paralelo), irá variar de projeto para projeto, e de iteração para iteração.&lt;/p></keyConsiderations>
+    <refinedDescription>&lt;p>Os principais objetivos do plano de iteração são fornecer à equipe um lugar central para informações a respeito dos objetivos da iteração, do plano detalhado com as atribuições das tarefas e dos resultados das avaliações. Este artefato também ajuda à equipe a monitorar o progresso da iteração e mantém os resultados da avaliação da iteração, que podem ser úteis para melhorar a próxima iteração.&lt;/p>&#xD;
+&lt;p>As atribuições das tarefas para uma iteração são um subconjunto de todas as tarefas da &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../openup/workproducts/work_items_list_39D03CC8.html&quot; guid=&quot;_rGNWsCbSEdqh1LYUOGRh2A&quot;>Lista de Itens de Trabalho&lt;/a>, conseqüentemente o plano de iteração referencia estes itens de trabalho.&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+</xmi:XMI>

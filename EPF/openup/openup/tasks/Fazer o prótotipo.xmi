@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-jJuDpSwaktPssDvzEGrHXg" name="Fazer o prótotipo,_prSagCOVEeOg05XuWIgxJw" guid="-jJuDpSwaktPssDvzEGrHXg" authors="João Henrique" changeDate="2013-09-22T11:52:44.260-0300" version="1">
+  <mainDescription>É um modelo com objetivo de facilitar o entendimento do projeto, ajuda a entender os requisitos do usuário e obter uma&#xD;
+melhor definição dos requisitos do sistema.</mainDescription>
+  <sections xmi:id="_ZKOwECOiEeOg05XuWIgxJw" name="Identificar componentes" guid="_ZKOwECOiEeOg05XuWIgxJw">
+    <sectionDescription>&lt;p>&#xD;
+    A partir dos requisitos definir como será o site&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZgX_MCOiEeOg05XuWIgxJw" name="Buscar referencias" guid="_ZgX_MCOiEeOg05XuWIgxJw">
+    <sectionDescription>&lt;p>&#xD;
+    Idenficar formas de mostrar visualmente o que está explicito nos requisitos&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_0_ltYCOiEeOg05XuWIgxJw" name="Obter conhecimentos necessários para modelar" guid="_0_ltYCOiEeOg05XuWIgxJw">
+    <sectionDescription>Verificar o que está disponivel no mercado para que possa ser aplicado no sistema.</sectionDescription>
+  </sections>
+  <sections xmi:id="_XIz1cCOjEeOg05XuWIgxJw" name="Análize de confirmação" guid="_XIz1cCOjEeOg05XuWIgxJw">
+    <sectionDescription>&lt;p>&#xD;
+    Mostrar a propósta ao grupo.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_w3nV8COjEeOg05XuWIgxJw" name="Escolha da ferramenta" guid="_w3nV8COjEeOg05XuWIgxJw">
+    <sectionDescription>Busca uma ferramenta que atendesse as necessidades</sectionDescription>
+  </sections>
+  <sections xmi:id="_6Dt5ICOjEeOg05XuWIgxJw" name="Fazer o prótipo" guid="_6Dt5ICOjEeOg05XuWIgxJw">
+    <sectionDescription>Com base nos requisitos elaborar o prótotipo</sectionDescription>
+  </sections>
+  <purpose>Facilitar o entendimento do projeto</purpose>
+</org.eclipse.epf.uma:TaskDescription>

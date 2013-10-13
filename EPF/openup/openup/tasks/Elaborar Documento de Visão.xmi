@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-z2UOUB9r8MKMJWrSNjVu5A" name="Elaborar Documento de Visão,_leNHUCObEeOg05XuWIgxJw" guid="-z2UOUB9r8MKMJWrSNjVu5A" authors="Attany , João Henrique, Maria Luciene, Vanessa, Yuri Loiola." changeDate="2013-09-22T12:39:52.602-0300" version="1.0">
+  <mainDescription>O documento do visão evidencia os principais objetivos do projeto,&amp;nbsp;apresenta uma&amp;nbsp;descrição detalhada do problema,&#xD;
+assim como uma solução , possui as principais caracteriscas&amp;nbsp;e lista as&amp;nbsp; funcionalidades do sistema.</mainDescription>
+  <sections xmi:id="_g7w6ECOfEeOg05XuWIgxJw" name="Objetivos do projeto" guid="_g7w6ECOfEeOg05XuWIgxJw">
+    <sectionDescription>&lt;p>&#xD;
+    Ter uma visão ampla e clara do problema e da soluçao proposta.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_CxQqUCOfEeOg05XuWIgxJw" name="Definir requisitos" guid="_CxQqUCOfEeOg05XuWIgxJw">
+    <sectionDescription>Levantar as necessidades do sistema</sectionDescription>
+  </sections>
+  <sections xmi:id="_aW3psCOfEeOg05XuWIgxJw" name="Fazer o Prótotipo" guid="_aW3psCOfEeOg05XuWIgxJw">
+    <sectionDescription>&lt;p>&#xD;
+    Modela o sistema.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;p>&#xD;
+    Compreender o projeto como um todo.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-fT3c08RFPfAXfuQETFAjYA" name="new_artifact,_aaP4YCOgEeOg05XuWIgxJw" guid="-fT3c08RFPfAXfuQETFAjYA" authors="Attany , João Henrique, Maria Luciene, Vanessa, Yuri Loiola." changeDate="2013-09-22T13:05:11.916-0300" version="1.0">
+  <mainDescription>O documento do visão evidencia os principais objetivos do projeto,&amp;nbsp;apresenta uma&amp;nbsp;descrição detalhada do problema,&#xD;
+assim como uma solução , possui as principais caracteriscas&amp;nbsp;e lista as&amp;nbsp; funcionalidades do sistema.</mainDescription>
+  <purpose>Auxiliar na compreensão do projeto como um todo</purpose>
+</org.eclipse.epf.uma:ArtifactDescription>
