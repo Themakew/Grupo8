@@ -23,7 +23,8 @@ public class DaoEstados extends Dao {
 
 			Connection conexao = gerarConexao();
 
-			String query = "Select * from unidadesFederativa where" + ano;
+			String query = "select regiao, opcao, ano"
+					+ano+" from dldufabsoluto2001_2009 union select regiao, opcao, ano"+ano+" from dldufabsoluto2001_2009";
 
 			Statement stm = (Statement) conexao.createStatement();
 			ResultSet resultadoUF = (ResultSet) stm.executeQuery(query);
