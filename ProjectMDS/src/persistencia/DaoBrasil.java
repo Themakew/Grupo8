@@ -17,12 +17,15 @@ public class DaoBrasil extends Dao {
 
 	public List<Brasil> buscaBrasil(String ano) throws SQLException {
 
-		List<Brasil> brasil = new ArrayList<Brasil>();
+		List<Brasil> brasil = new ArrayList<Brasil>();i
 
 		try {
 
 			Connection conexao = gerarConexao();
-			String query = "Select * from Brasil where" + ano;
+			
+			String query = "select opcao, ano" + ano + " from dldbrasilrelativo1981_1990 union select opcao, ano"
+			+ano+ " from dldbrasilabsoluto1981_1990";
+			
 			Statement stm = (Statement) conexao.createStatement();
 			ResultSet resultadoBrasil = (ResultSet) stm.executeQuery(query);
 			// Preciso saber como vai ser o que o select vai retornar
