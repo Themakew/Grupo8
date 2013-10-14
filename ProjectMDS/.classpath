@@ -11,5 +11,7 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="C:/Users/marialuciene/workspaceWeb/ProjectMDS/WebContent/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="/home/joaohenrique/Dropbox/easymock-3.2/easymock-3.2/easymock-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/joaohenrique/Área de Trabalho/mockito-all-1.9.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
