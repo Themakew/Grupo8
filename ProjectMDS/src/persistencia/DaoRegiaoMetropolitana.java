@@ -15,22 +15,36 @@ public class DaoRegiaoMetropolitana extends Dao {
 
 	}
 
-	public List<RegiaoMetropolitana> buscaRegioes(String ano, String tipo)
+	public List<RegiaoMetropolitana> buscaRegioes(String anoregiao, String tipo)
 			throws Exception {
 
 		List<RegiaoMetropolitana> regiao = new ArrayList<RegiaoMetropolitana>();
+	
+		int ano = Integer.parseInt(anoregiao);
 
 		try {
 
 			Connection conexao = gerarConexao();
+			
 			String query = "select regiao, opcao, ano"+ano+" from dldregiaoabsoluto2001_2009 union select regiao, opcao, ano"
-					+ano+" from dldregiaoabsoluto2001_2009;
+					+ano+" from dldregiaoabsoluto2001_2009";
+			
 			Statement stm = (Statement) conexao.createStatement();
 			ResultSet resultadoRegiao = (ResultSet) stm.executeQuery(query);
-			resultadoRegiao.getString(1);
-			regiao.add(new RegiaoMetropolitana());
+			
+			//varrer toda a tabela
+			while(resultadoRegiao.next()){
+				resultadoRegiao.getString(1);
+				resultadoRegiao.getInt(2);
+				regiao.add(new RegiaoMetropolitana());
+			}
 			stm.close();
 			fecharConexao();
+			
+			
+			
+			
+			
 
 		} catch (Exception e) {
 
