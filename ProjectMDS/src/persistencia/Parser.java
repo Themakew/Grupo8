@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-public class Parser extends Conexao  {
+public class Parser extends Dao {
 	
 	private static final String SQL_INSERT1 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld1.csv' INTO TABLE dldbrasilabsoluto1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
 	private static final String SQL_INSERT2 = "LOAD DATA INFILE '/Dropbox/Projeto MDS/scripts.sql/arquivos/dld2.csv' INTO TABLE dldbrasilrelativo1981_1990 FIELDS TERMINATED BY ';'ENCLOSED BY '' LINES TERMINATED BY '\n';";
