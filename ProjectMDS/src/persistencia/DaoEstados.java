@@ -1,10 +1,11 @@
 package persistencia;
-
 import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
 import model.UnidadesFederativas;
+import persistencia.Dao;
+
 import com.mysql.jdbc.ResultSet;
 import com.mysql.jdbc.Statement;
 
@@ -16,8 +17,9 @@ public class DaoEstados extends Dao {
 
 	public List<UnidadesFederativas> buscaUF(String anoUF, String tipo)
 			throws Exception {
-		
+	
 		int ano = Integer.parseInt(anoUF);
+		
 
 		List<UnidadesFederativas> uf = new ArrayList<UnidadesFederativas>();
 
@@ -34,51 +36,25 @@ public class DaoEstados extends Dao {
 			
 			// executa um select- permite navegar pelos registros
 			ResultSet resultadoUF = (ResultSet) stm.executeQuery(query);
+
 			
 			while(resultadoUF.next()){
 				
+				
+				
 				//coluna pais
 				String nome = resultadoUF.getString(1);
+				System.out.println("UF: " + nome);
 				
 				//coluna opcao
 				String opcao = resultadoUF.getString(2);
+				System.out.println("Opcao: " + opcao);
 				
-				if(ano == 2001){
-					String data = resultadoUF.getString(3);
-					
-				}else if(ano == 2002){
-					String data = resultadoUF.getString(4);
-					
-				}else if(ano == 2003){
-					String data = resultadoUF.getString(5);
-					
-				}else if(ano == 2004){
-					String data = resultadoUF.getString(6);
-					
-				}else if(ano == 2005){
-					String data = resultadoUF.getString(7);
-					
-				}else if(ano == 2006){
-					String data = resultadoUF.getString(8);
-					
-				}else if(ano == 2007){
-					String data = resultadoUF.getString(9);
-					
-				}else if(ano == 2008){
-					String data = resultadoUF.getString(10);
-					
-				}else if(ano == 2009){
-					String data = resultadoUF.getString(11);
-					
-				}else{
-					System.out.println("Opção invalida");
-				}
+				String data = resultadoUF.getString(3);
+				System.out.println("Quantidade: " + data);
 				
-				
-				uf.add(new UnidadesFederativas(nome , data , opcao,tipo));
-				
+				System.out.println("\n");
 			}
-
 			
 			stm.close();
 			fecharConexao();

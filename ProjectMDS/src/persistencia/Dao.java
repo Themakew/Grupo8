@@ -16,12 +16,10 @@ public class Dao {
 	public Connection gerarConexao() throws SQLException {
 
 		try {
-
-			conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
+			
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/banco",
-					"usuario", "senha");
-
+			conn = DriverManager.getConnection(SQL_URL, SQL_USER, SQL_PASS);
+			
 		} catch (ClassNotFoundException ex) {
 
 			ex.printStackTrace();
