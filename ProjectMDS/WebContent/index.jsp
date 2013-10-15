@@ -1,46 +1,271 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>m
-<form action="PesquisaDados?ddddd='sss'" method="post"> 
-<SELECT  name="estado" >
-<OPTION selected value="Selecione...">Selecione...</OPTION>
-<OPTION  value="Acre">Acre</OPTION>
-<OPTION  value="Alagoas">Alagoas</OPTION>
-<OPTION  value="Amapá">Amapá</OPTION>
-<OPTION  value="Amazonas">Amazonas</OPTION>
-<OPTION  value="Bahia">Bahia</OPTION>
-<OPTION  value="Ceará">Ceará</OPTION>
-<OPTION  value="Distrito Federal">Distrito Federal</OPTION>
-<OPTION  value="Espírito Santo">Espírito Santo</OPTION>
-<OPTION  value="Goiás">Goiás</OPTION>
-<OPTION  value="Maranhão">Maranhão</OPTION>
-<OPTION  value="Mato Grosso">Mato Grosso</OPTION>
-<OPTION  value="Mato Grosso do Sul">Mato Grosso do Sul</OPTION>
-<OPTION  value="Minas Gerais">Minas Gerais</OPTION>
-<OPTION  value="Pará">Pará</OPTION>
-<OPTION  value="Paraíba">Paraíba</OPTION>
-<OPTION  value="Paraná">Paraná</OPTION>
-<OPTION  value="Pernanbuco">Pernanbuco</OPTION>
-<OPTION  value="Piauí">Piauí</OPTION>
-<OPTION  value="Rio de Janeiro">Rio de Janeiro</OPTION>
-<OPTION  value="Rio Grande do Norte">Rio Grande do Norte</OPTION>
-<OPTION  value="Rio Grande do Sul">Rio Grande do Sul</OPTION>
-<OPTION  value="Rondônia">Rondônia</OPTION>
-<OPTION  value="Roraima">Roraima</OPTION>
-<OPTION  value="Santa Catarina">Santa Catarina</OPTION>
-<OPTION  value="São Paulo">São Paulo</OPTION>
-<OPTION  value="Sergipe">Sergipe</OPTION>
-<OPTION  value="Tocantins">Tocantins</OPTION>
-</SELECT>
-<input type="submit" value="Pesquisar"/>
-</form>
+    <title>Untitled Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <link type="text/css" href="resources/css/reset.css" rel="Stylesheet" />
+    <link type="text/css" href="resources/css/default.css" rel="Stylesheet" />
 
+    <script type="text/javascript">
+        if (location.href.toString().indexOf('file://localhost/') == 0) {
+            location.href = location.href.toString().replace('file://localhost/', 'file:///');
+        }
+    </script>
+
+    <script type="text/javascript" src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="resources/scripts/splitter.js"></script>
+    <script type="text/javascript" src="resources/scripts/axutils.js"></script>
+    <script type="text/javascript" src="resources/scripts/axprototype.js"></script>
+    <script type="text/javascript" src="resources/scripts/messagecenter.js"></script>
+    <script type="text/javascript" src="data/configuration.js"></script>
+    <script type="text/javascript" src="data/sitemap.js"></script>
+    <style type="text/css">
+
+#outerContainer {
+	width:1000px;
+	height:20000px;
+}
+
+.vsplitbar {
+	width: 3px;
+	background: #DDD;
+}
+
+#rightPanel {
+    background-color: White;
+}
+
+#leftPanel 
+{
+    /*min-width: 190px;*/
+}
+
+.splitterMask
+{
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background-image: url(resources/images/transparent.gif);
+   z-index: 20000;
+}
+
+
+    </style>
+    <script type="text/javascript" language="JavaScript"><!--
+        // isolate scope
+        (function () {
+            setUpController();
+
+            var _settings = {};
+            _settings.projectId = configuration.prototypeId;
+            _settings.isAxshare = configuration.isAxshare;
+            _settings.loadFeedbackPlugin = configuration.loadFeedbackPlugin;
+
+            $axure.player.settings = _settings;
+
+            $(window).bind('load', function () {
+                if (CHROME_5_LOCAL && !$('body').attr('pluginDetected')) {
+                    window.location = 'resources/chrome/chrome.html';
+                }
+            });
+
+            $(document).ready(function () {
+
+                $axure.page.bind('load.start', mainFrame_onload);
+                $axure.messageCenter.addMessageListener(messageCenter_message);
+
+                if ($axure.player.settings.loadFeedbackPlugin == true) {
+                    if ($axure.player.settings.isAxshare == true) {
+                        $axure.utils.loadJS('/Scripts/plugins/feedback/feedback.js');
+                    } else {
+                        $axure.utils.loadJS('http://share.axure.com/Scripts/plugins/feedback/feedback.js');
+                    }
+                }
+
+                if(navigator.userAgent.indexOf("MSIE") >= 0) $('#outerContainer').width('100%');
+                initialize();
+                $('#outerContainer').splitter({
+                    //outline: true,
+                    sizeLeft: 250
+                });
+                $('#leftPanel').width(250);
+
+                $(window).resize(function () {
+                    resizeContent();
+                });
+
+                //                $('#outerContainer').resize(function() { return false; });
+
+                $('#maximizePanelContainer').hide();
+
+                initializeLogo();
+
+                $(window).resize();
+                //                $('#outerContainer').trigger('resize');
+                resizeContent();
+                if ($.browser.msie && $.browser.version == "6.0") {
+                    // wait for ie to get to a good state and resize
+                    setTimeout(function() { $('#outerContainer').trigger('resize'); }, 30);
+                }
+            });
+
+
+        })();
+
+        lastLeftPanelWidth = 250;
+
+        function messageCenter_message(message, data) {
+            if (message == 'expandFrame') expand();
+        }
+
+        function resizeContent() {
+            var newHeight = $(window).height();
+            var newWidth = $(window).width();
+            
+            var controlContainerHeight = newHeight - 37;
+            if ($('#interfaceControlFrameLogoContainer').is(':visible')) {
+                controlContainerHeight -= $('#interfaceControlFrameLogoContainer').height() + 16;
+            }
+
+            $('#outerContainer').height(newHeight).width(newWidth);
+            $('#leftPanel').height(newHeight);
+            $('#interfaceControlFrame').height(newHeight);
+            $('#interfaceControlFrameContainer').height(controlContainerHeight);
+
+            $('#rightPanel').height(newHeight);
+            $('#mainFrame').height(newHeight);
+
+            $('#rightPanel').width($(window).width() - $('#leftPanel').width() - $('.vsplitbar').width());
+        }
+
+        function collapse() {
+            $('#maximizePanelContainer').show();
+            lastLeftPanelWidth = $('#leftPanel').width();
+            $('#leftPanel').hide();
+            $('.vsplitbar').hide();
+            $('#rightPanel').width($(window).width());
+            $(window).resize();
+            $('#outerContainer').trigger('resize');
+        }
+
+        function expand() {
+            $('#maximizePanelContainer').hide();
+            $('#leftPanel').width(lastLeftPanelWidth);
+            $('#leftPanel').show();
+            $('.vsplitbar').show();
+            $('#rightPanel').width($(window).width() - $('#leftPanel').width() - $('.vsplitbar').width());
+            $(window).resize();
+            $('#outerContainer').trigger('resize');
+        }
+
+        function initialize() {
+            var mainFrame = document.getElementById("mainFrame");
+            var pageName = QueryString("Page");
+            if (pageName.length > 0) {
+                mainFrame.contentWindow.location.href = pageName + ".html";
+            }
+            else {
+                mainFrame.contentWindow.location.href = 
+                    (sitemap.rootNodes.length > 0 ? sitemap.rootNodes[0].url : "about:blank");
+            }
+        }
+
+        function initializeLogo() {
+            if (configuration.logoImagePath) {
+                $('#interfaceControlFrameLogoImageContainer').html('<img id="logoImage" src="" />');
+                $('#logoImage').attr('src', configuration.logoImagePath).load(function () {
+                    resizeContent();
+                });
+            } else {
+                $('#interfaceControlFrameLogoImageContainer').hide();
+            }
+
+            if (configuration.logoImageCaption) {
+                $('#interfaceControlFrameLogoCaptionContainer').html(configuration.logoImageCaption);
+            } else {
+                $('#interfaceControlFrameLogoCaptionContainer').hide();
+            }
+
+            if (!$('#interfaceControlFrameLogoImageContainer').is(':visible') && !$('#interfaceControlFrameLogoCaptionContainer').is(':visible')) {
+                $('#interfaceControlFrameLogoContainer').hide();
+            }
+        }
+
+        function mainFrame_onload() {
+            //var mainFrame = document.getElementById("mainFrame");
+            if ($axure.page.pageName) {
+                //document.title = mainFrame.contentWindow.PageName;
+                document.title = $axure.page.pageName;
+            }
+        }
+
+        function QueryString(query) {
+            var qstring = self.location.href.split("?");
+            if (qstring.length < 2) return ""
+
+            var prms = qstring[1].split("&");
+            var frmelements = new Array();
+            var currprmeter, querystr = "";
+
+            for (i = 0; i < prms.length; i++) {
+                currprmeter = prms[i].split("=");
+                frmelements[i] = new Array();
+                frmelements[i][0] = currprmeter[0];
+                frmelements[i][1] = currprmeter[1];
+            }
+
+            for (j = 0; j < frmelements.length; j++) {
+                if (frmelements[j][0] == query) {
+                    querystr = frmelements[j][1];
+                    break;
+                }
+            }
+            return querystr;
+        }
+
+--></script>
+
+    <link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
+    <script type="text/javascript" src="plugins/sitemap/sitemap.js"></script>
+    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
+    <script type="text/javascript" src="plugins/page_notes/page_notes.js"></script>
+
+</head>
+<body scroll="no">
+    <div id="outerContainer">
+
+        <div id="leftPanel">
+            <div id="interfaceControlFrame">
+                <div id="interfaceControlFrameMinimizeContainer">
+                    <a title="Collapse Controls" id="interfaceControlFrameMinimizeButton" onclick="collapse();">&nbsp;</a>
+                </div>
+                <div id="interfaceControlFrameLogoContainer">
+                    <div id="interfaceControlFrameLogoImageContainer"></div>
+                    <div id="interfaceControlFrameLogoCaptionContainer"></div>
+                </div>
+                <div id="interfaceControlFrameHeaderContainer">
+                    <ul id="interfaceControlFrameHeader">
+                    </ul>
+                </div>
+                <div id="interfaceControlFrameContainer">
+                </div>
+            </div>
+        </div>
+        <div id="rightPanel">
+            <iframe id="mainFrame" width="100%" height="100%" src="" frameborder="0"></iframe>
+        </div>
+
+    </div>
+
+    <div id="maximizePanelContainer">
+        <iframe id="expandFrame" src="resources/expand.html" width="100%" height="100%" scrolling="no" allowtransparency="true" frameborder="0"></iframe>
+    </div>
 
 </body>
 </html>
