@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.4" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="control.ServletGrafico" project="ProjectMDS" 
+    file="/ProjectMDS/src/control/ServletGrafico.java" binary="false" label="servletGrafico" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="202" y="0"/>    
+    <execution id="2">      
+      <position height="147" width="106" x="5" y="127"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="19" width="106" x="5" y="359"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="control.ServletGrafico" project="ProjectMDS" 
+    file="/ProjectMDS/src/control/ServletGrafico.java" binary="false" label="servletGrafico1" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="130" y="0"/>    
+    <execution id="4">      
+      <position height="109" width="106" x="115" y="146"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="persistencia.DaoBrasil" project="ProjectMDS" 
+    file="/ProjectMDS/src/persistencia/DaoBrasil.java" binary="false" label="daoBrasil1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="57" width="0" x="0" y="179"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="57" width="80" x="225" y="340"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="persistencia.Dao" project="ProjectMDS" 
+    file="/ProjectMDS/src/persistencia/Dao.java" binary="false" label="dao" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="357" y="0"/>    
+    <execution id="11">      
+      <position height="19" width="57" x="309" y="198"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="95" width="57" x="309" y="321"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" operation="buscaBrasil(java.lang.String):java.util.List&lt;Brasil&gt;">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" operation="gerarConexao():java.sql.Connection">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="13" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="16" operation="buscaBrasil(java.lang.String):java.util.List&lt;Brasil&gt;">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>
+</sequence-diagram>
