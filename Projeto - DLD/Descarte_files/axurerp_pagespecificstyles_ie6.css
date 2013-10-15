@@ -343,13 +343,3 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="PagePadrao_files/u99_normal.png");
 }
 
-* html .u160_normal {
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Descarte_files/u160_normal.png");
-}
-
-* html .u162_normal {
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Descarte_files/u162_normal.png");
-}
-
