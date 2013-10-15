@@ -68,7 +68,7 @@
 </SELECT>
 
 <SELECT id="u1" class="u1 form_sketch"   >
-<OPTION selected value="Ano">Ano</OPTION>
+<OPTION name="ano" selected value="Ano">Ano</OPTION>
 <OPTION  value="2009">2009</OPTION>
 <OPTION  value="2008">2008</OPTION>
 <OPTION  value="2007">2007</OPTION>
