@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-NFV8LzQhLOUrrgNqqfiDyw" name=",_q6BcgCOrEeOg05XuWIgxJw" guid="-NFV8LzQhLOUrrgNqqfiDyw" authors="João Henrique" changeDate="2013-09-22T14:27:00.503-0300" version="1.0">
+  <mainDescription>Modelar &amp;nbsp;o comportamento pretendido do sistema&amp;nbsp;para facilitar&amp;nbsp;a comunicação com o cliente.</mainDescription>
+  <sections xmi:id="_PSaDcCOvEeOg05XuWIgxJw" name="Funções do sistema" guid="_PSaDcCOvEeOg05XuWIgxJw">
+    <sectionDescription>Após definido os requisitos, destacar quais funções o sistema vai desempenhar.</sectionDescription>
+  </sections>
+  <sections xmi:id="_bU5k8COvEeOg05XuWIgxJw" name="Identifar atores" guid="_bU5k8COvEeOg05XuWIgxJw">
+    <sectionDescription>Identificar atores envolvidos em cada funcionalidade</sectionDescription>
+  </sections>
+  <sections xmi:id="_GTSW4COwEeOg05XuWIgxJw" name="Desenhar o d" guid="_GTSW4COwEeOg05XuWIgxJw"/>
+  <sections xmi:id="_HJSKwCOwEeOg05XuWIgxJw" name="Desenhar o diagrama de caso de uso" guid="_HJSKwCOwEeOg05XuWIgxJw"/>
+  <purpose>Descrever um conjunto de sequencias de ações para produzir um resultado.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-1wXuezaQfr5H9CIXNoppBw" name="Desenvolvedor,_BCtiMDR9EduwLdLujGQAIQ" guid="-1wXuezaQfr5H9CIXNoppBw" changeDate="2013-09-22T11:28:27.288-0300" version="7.2.0">
+  <mainDescription>&lt;p>&#xD;
+    Este papel é responsável por desenvolver uma parte do sistema, incluindo a construção de seu design de forma que ele&#xD;
+    atenda a arquitetura e possivelmente a prototipagem da interface de usuário, e então implementar, executar o teste de&#xD;
+    unidade e integrar os componentes que são parte da solução.&#xD;
+&lt;/p></mainDescription>
+  <skills>&lt;p>&#xD;
+    Este papel necessita ter os seguintes conhecimentos e habilidades:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Linguagem&amp;nbsp;&amp;nbsp;Web - Java, HTML, CSS&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Elaboração de caso de uso&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Arquiterura MVC&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Elicitação de requisitos&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        RUP - Processo Unificado&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        TDD - Desenvolvimento dirigido por testes&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Conhecimentos e habilidades com as seguintes ferramentas:&#xD;
+&lt;/p>&#xD;
+&lt;ul class=&quot;noindent&quot;>&#xD;
+    &lt;li>&#xD;
+        &amp;nbsp;Eclipse&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Xampp&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Github/Gitbash&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        DotProjetc&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Elicitação de requisitos&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        RUP - Processo Unificado&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        TDD - Desenvolvimento dirigido por testes&#xD;
+    &lt;/li>&#xD;
+    &lt;li style=&quot;list-style: none&quot;>&#xD;
+        &lt;br />&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></skills>
+</org.eclipse.epf.uma:RoleDescription>
